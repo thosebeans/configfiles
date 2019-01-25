@@ -1,0 +1,18 @@
+{
+    "desc": "mydotfiles",
+    "actions": {
+        "i3": {
+            "desc": "i3 dotfiles",
+            "primitives": [
+                ["ln", "i3/i3config", "{{.HOME}}/.config/i3/config"],
+                ["ln", "i3/i3statusconfig", "{{.HOME}}/.config/i3status/config"]
+            ]
+        },
+        "hg": {
+            "desc": "mercurial dotfiles",
+            "primitives": [
+                ["ln", "hg/hgrc", "{{.HOME}}/.hgrc"]
+            ]
+        }
+    }
+}
