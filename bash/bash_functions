@@ -1,0 +1,25 @@
+#!/bin/bash
+
+vim() {
+    if which nvim &>/dev/null ; then
+        env nvim $*
+    else
+        env vim $*
+    fi
+}
+
+hgg() {
+    hg log --graph --template "{label('custom.rev',rev)}:{label('custom.node',node|short)}:{label('custom.branch',branch)}:{label('custom.author',author)}\n\'{label('custom.desc',desc)}\'\n"
+}
+
+cht.sh() {
+    local search=""
+    for ((i=1; i<=$#; i++)); do
+        search="${search}${!i}/"
+    done
+    env curl "cht.sh/${search}" || env wget -qO - "cht.sh/${search}"
+}
+
+fork() {
+    nohup $* &>/dev/null &
+}

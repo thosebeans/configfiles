@@ -13,6 +13,15 @@
             "primitives": [
                 ["ln", "hg/hgrc", "{{.HOME}}/.hgrc"]
             ]
+        },
+        "bash": {
+            "desc": "bash",
+            "primitives": [
+                ["ln", "bash/bashrc", "{{.HOME}}/.bashrc"],
+                ["ln", "bash/bash_aliases", "{{.HOME}}/.bash_aliases"],
+                ["ln", "bash/bash_functions", "{{.HOME}}/.bash_functions"],
+                ["ln", "bash/profile", "{{.HOME}}/.profile"]
+            ]
         }
     }
 }
