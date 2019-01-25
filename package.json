@@ -30,6 +30,14 @@
                 ["run", "nvim/downloadSummerfruit256.sh"],
                 ["run", "nvim/installplug.sh"]
             ]
+        },
+        "wallpapers": {
+            "desc": "my wallpapers",
+            "primitives": [
+                ["ln", "wallpapers/firewatch1.jpg", "{{.HOME}}/Bilder/wallpapers/firewatch1.jpg"],
+                ["ln", "wallpapers/mrrobotflat.png", "{{.HOME}}/Bilder/wallpapers/mrrobotflat.png"],
+                ["ln", "wallpapers/sao1.jpg", "{{.HOME}}/Bilder/wallpapers/sao1.jpg"]
+            ]
         }
     }
 }
