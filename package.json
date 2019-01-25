@@ -22,6 +22,14 @@
                 ["ln", "bash/bash_functions", "{{.HOME}}/.bash_functions"],
                 ["ln", "bash/profile", "{{.HOME}}/.profile"]
             ]
+        },
+        "nvim": {
+            "desc": "nvim dotf",
+            "primitives": [
+                ["ln", "nvim/initvim", "{{.HOME}}/.config/nvim/init.vim"],
+                ["run", "nvim/downloadSummerfruit256.sh"],
+                ["run", "nvim/installplug.sh"]
+            ]
         }
     }
 }

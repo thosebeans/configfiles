@@ -1,0 +1,69 @@
+set runtimepath^=~/.config/nvim
+let &packpath = &runtimepath
+set number
+set cursorline
+syntax enable
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set showmatch
+set wildmenu
+let mapleader=","
+set t_Co=256  " make use of 256 terminal colors 
+
+" brackets, braces, parantheses, quotes
+imap ( ()<Left>
+imap [ []<Left>
+imap { {}<Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap < <><Left>
+
+" plug
+call plug#begin()
+    Plug 'Valloric/YouCompleteMe', { 'do': ':UpdateRemotePlugins' }
+    Plug 'SirVer/ultisnips'
+    Plug 'https://github.com/leafgarland/typescript-vim.git'
+    Plug 'NLKNguyen/papercolor-theme'
+    Plug 'zah/nim.vim'
+call plug#end()
+
+" ultisnips
+let g:UltiSnipsExpandTrigger="<c-space>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+
+" save
+nmap <C-s> :write <CR>
+imap <C-s> <Esc>:write<CR>a
+nmap qw :write<CR>:wincmd q<CR>
+
+" windows
+nmap <C-Up>    :wincmd k <CR>
+nmap <C-Down>  :wincmd j <CR>
+nmap <C-Left>  :wincmd h <CR>
+nmap <C-Right> :wincmd l <CR>
+nmap qq :wincmd q<CR>
+nmap qi :q!<CR>
+nmap +     :wincmd +<CR>
+nmap -     :wincmd -<CR>
+nmap <     :wincmd <<CR>
+nmap >     :wincmd ><CR>
+
+" tabs
+nmap t<Up>    :tabnew<CR>
+nmap t<Down>  :tabclose<CR>
+nmap t<Left>  :tabprevious<CR>
+nmap t<Right> :tabnext<CR>
+
+" search
+nnoremap <leader><space> :nohlsearch<CR>
+
+" terminal
+tnoremap <Esc><Esc> <C-\><C-n>
+
+" run
+command RunFile vsplit term://%
+
+set background=light
+colorscheme PaperColor
