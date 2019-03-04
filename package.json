@@ -36,7 +36,8 @@
             "primitives": [
                 ["ln", "wallpapers/firewatch1.jpg", "{{.HOME}}/Bilder/wallpapers/firewatch1.jpg"],
                 ["ln", "wallpapers/mrrobotflat.png", "{{.HOME}}/Bilder/wallpapers/mrrobotflat.png"],
-                ["ln", "wallpapers/sao1.jpg", "{{.HOME}}/Bilder/wallpapers/sao1.jpg"]
+                ["ln", "wallpapers/sao1.jpg", "{{.HOME}}/Bilder/wallpapers/sao1.jpg"],
+                ["ln", "wallpapers/sao1.jpg", "{{.HOME}}/Bilder/wallpapers/lake1.jpg"]
             ]
         }
     }
