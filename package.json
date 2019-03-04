@@ -28,7 +28,9 @@
             "primitives": [
                 ["ln", "nvim/initvim", "{{.HOME}}/.config/nvim/init.vim"],
                 ["run", "nvim/downloadSummerfruit256.sh"],
-                ["run", "nvim/installplug.sh"]
+                ["run", "nvim/installplug.sh"],
+                ["run", "rm", "-rf", "{{.HOME}}/.config/nvim/UltiSnips"],
+                ["ln", "nvim/UltiSnips", "{{.HOME}}/.config/nvim/UltiSnips"]
             ]
         },
         "wallpapers": {
