@@ -27,11 +27,14 @@
     gaps inner 8
     smart_gaps on
   ### BORDER
-    #set $f_color #3498db
-    set $f_color #F79F1F
-    #set $u_color #9b59b6
-    set $u_color #b71540
-    set $t_color #ecf0f1
+   #set $f_color #3498db
+   #set $f_color #F79F1F
+    set $f_color #6EAFC8
+   #set $u_color #9b59b6
+   #set $u_color #b71540
+    set $u_color #698F9D
+   #set $t_color #ecf0f1
+    set $t_color #e5e5e5
     default_border pixel 5
     #class          border   backgr   text     indicat  child_border
     client.focused   $f_color $f_color $t_color $t_color $f_color
@@ -162,8 +165,12 @@
         font pango:Open Sans 16
         status_command i3status
      	colors {
-     		background #000000
-     		inactive_workspace #eb2f06 #eb2f06 #ffffff
-     		focused_workspace #fa983a #fa983a #ffffff
+     		#background #000000
+            background #172220
+            #mode               border  bg      text
+     	   #inactive_workspace  #eb2f06 #eb2f06 #ffffff
+            inactive_workspace  #a0a0a0 #a0a0a0 #e5e5e5
+     	   #focused_workspace   #fa983a #fa983a #ffffff
+            focused_workspace   #e5e5e5 #e5e5e5 #172220
      	}
      }
