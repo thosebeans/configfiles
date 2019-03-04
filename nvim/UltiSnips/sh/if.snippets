@@ -1,0 +1,11 @@
+snippet if "if ..."
+if ${1:expression}; then
+	${0:body}
+fi
+endsnippet
+
+snippet ifb "if - bash"
+if [[ ${1:expression} ]]; then
+	${0:body}
+fi
+endsnippet

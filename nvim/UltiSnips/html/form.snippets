@@ -1,0 +1,21 @@
+snippet form "form"
+<form method="${1:GET}" action="${2:action}">
+	${0:body}
+</form>
+endsnippet
+
+snippet input:t "input - text"
+<input type="text">${0:body}</input>
+endsnippet
+
+snippet input:s "input - submit"
+<input type="submit">${0:body}</input>
+endsnippet
+
+snippet input:r "input -radio"
+<input type="radio">${0:body}</input>
+endsnippet
+
+snippet textarea "<textarea>"
+<textarea name="${1:name}" rows="${2:rows}" cols="${3:cols}"/>
+endsnippet
