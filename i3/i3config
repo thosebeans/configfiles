@@ -7,7 +7,7 @@
   ### COMPOSITOR
     exec --no-startup-id "compton -b"
   ### WALLPAPER
-    exec --no-startup-id "feh --bg-scale ~/Bilder/wallpapers/firewatch1.jpg"
+    exec --no-startup-id "feh --bg-scale ~/Bilder/wallpapers/lake1.jpg"
   ### POLKIT
     exec --no-startup-id "/usr/lib/polkit-gnome-authentication-agent-1"
     exec --no-startup-id "/usr/bin/lxpolkit"
