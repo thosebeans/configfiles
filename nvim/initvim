@@ -27,6 +27,7 @@ call plug#begin()
     Plug 'https://github.com/leafgarland/typescript-vim.git'
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'zah/nim.vim'
+    Plug 'https://github.com/tpope/vim-fugitive'
 call plug#end()
 
 " ultisnips
