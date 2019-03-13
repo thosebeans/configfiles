@@ -27,13 +27,8 @@
     gaps inner 8
     smart_gaps on
   ### BORDER
-   #set $f_color #3498db
-   #set $f_color #F79F1F
     set $f_color #6EAFC8
-   #set $u_color #9b59b6
-   #set $u_color #b71540
     set $u_color #698F9D
-   #set $t_color #ecf0f1
     set $t_color #e5e5e5
     default_border pixel 5
     #class          border   backgr   text     indicat  child_border
