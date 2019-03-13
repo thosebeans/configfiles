@@ -30,6 +30,7 @@
     set $f_color #6EAFC8
     set $u_color #698F9D
     set $t_color #e5e5e5
+
     default_border pixel 5
     #class          border   backgr   text     indicat  child_border
     client.focused   $f_color $f_color $t_color $t_color $f_color
