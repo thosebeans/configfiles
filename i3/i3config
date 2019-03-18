@@ -32,7 +32,7 @@
     set $u_color #698F9D
     set $t_color #e5e5e5
 
-    default_border pixel 1
+    default_border pixel 2
     #class          border   backgr   text     indicat  child_border
     client.focused   $f_color $f_color $t_color $t_color $f_color
     client.unfocused $u_color $u_color $t_color $t_color $u_color
