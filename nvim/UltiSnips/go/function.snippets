@@ -7,5 +7,11 @@ endsnippet
 snippet closure "func() ..."
 func(${1:args}) ${2:Return} {
 	${0:body}
+}${3:call}
+endsnippet
+
+snippet testFunc "Test..."
+func Test${1:name}(t *testing.T) {
+	${0}
 }
 endsnippet
