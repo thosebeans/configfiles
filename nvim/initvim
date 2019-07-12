@@ -19,6 +19,7 @@ imap { {}<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
 inoremap < <><Left>
+nmap ll $a;<ESC>
 
 " plug
 call plug#begin()

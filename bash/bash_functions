@@ -23,3 +23,7 @@ cht.sh() {
 fork() {
     nohup $* &>/dev/null &
 }
+
+addPath() {
+    PATH="${PWD}:${PATH}"
+}

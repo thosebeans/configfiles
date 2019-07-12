@@ -3,7 +3,7 @@
 
 ### AUTORUN
   ### KEYMAP
-    exec --no-startup-id "setxkbmap de"
+#    exec --no-startup-id "setxkbmap de"
   ### COMPOSITOR
     exec --no-startup-id "compton -b"
   ### WALLPAPER
@@ -16,11 +16,11 @@
     #exec --no-startup-id "xfce4-panel -d"
     #exec --no-startup-id "xfce4-power-manager"
   ### NOTIFICATION-DAEMON
-    exec --no-startup-id "dunst"
+ #   exec --no-startup-id "dunst"
   ### MOUNT-HELPER
-    exec --no-startup-id "udiskie"
+ #   exec --no-startup-id "udiskie"
   ### OTHER
-    exec --no-startup-id "pactl set-sink-volume 0 0%"
+ #   exec --no-startup-id "pactl set-sink-volume 0 0%"
 
 ### STYLE
   ### GAPS
@@ -86,12 +86,14 @@
       bindsym $mod+d exec dmenu_run
       #bindsym $mod+d exec "rofi -theme dmenu -show run"
   ### TERMINAL
-    #bindsym $mod+Return exec i3-sensible-terminal
+    bindsym $mod+Return exec i3-sensible-terminal
     #bindsym $mod+Return exec x-terminal-emulator
-    bindsym $mod+Return exec xfce4-terminal
+    #bindsym $mod+Return exec xfce4-terminal
   ### BACKLIGHT
-    bindsym XF86MonBrightnessUp exec "lux -a 1%"
-    bindsym XF86MonBrightnessDown exec "lux -s 1%"
+    #bindsym XF86MonBrightnessUp exec "lux -a 1%"
+    #bindsym XF86MonBrightnessDown exec "lux -s 1%"
+    bindsym XF86MonBrightnessUp   exec "xbacklight +1"
+    bindsym XF86MonBrightnessDown exec "xbacklight -1"
   ### KILL FOCUSED WINDOW
     bindsym $mod+Shift+q kill
   ### CHANGE FOCUSE WINDOW
@@ -153,7 +155,7 @@
   ### RESTART I3
     bindsym $mod+Shift+r restart
   ### POWERMENU
-    bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Power-Menu' -b 'Reboot' '/sbin/reboot || sudo /usr/bin/reboot' -b 'Shutdown' '/sbin/poweroff || sudo /usr/bin/poweroff' -b 'Lock screen' 'i3lock -n -c 57f9d6' -b 'Exit i3' 'i3-msg exit' "
+    bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Power-Menu' -b 'Reboot' 'sudo reboot' -b 'Shutdown' 'sudo poweroff' -b 'Lock screen' 'i3lock -n -c 57f9d6' -b 'Exit i3' 'i3-msg exit' "
   ### RESIZE MODE
     bindsym $mod+r mode "resize"
 
