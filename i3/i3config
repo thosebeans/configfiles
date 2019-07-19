@@ -5,14 +5,14 @@
   ### KEYMAP
 #    exec --no-startup-id "setxkbmap de"
   ### COMPOSITOR
-    exec --no-startup-id "compton -b"
+    #exec --no-startup-id "compton -b"
   ### WALLPAPER
     exec --no-startup-id "feh --bg-scale ~/Bilder/wallpapers/lake1.jpg"
   ### POLKIT
     exec --no-startup-id "/usr/lib/polkit-gnome-authentication-agent-1"
     exec --no-startup-id "/usr/bin/lxpolkit"
   ### PANEL
-    exec --no-startup-id "tint2"
+    #exec --no-startup-id "tint2"
     #exec --no-startup-id "xfce4-panel -d"
     #exec --no-startup-id "xfce4-power-manager"
   ### NOTIFICATION-DAEMON
@@ -40,16 +40,16 @@
     font pango:Open Sans:style=Bold 14
 
 ### WORKSPACES
-  set $ws1 "1"
-  set $ws2 "2"
-  set $ws3 "3"
-  set $ws4 "4"
-  set $ws5 "5"
-  set $ws6 "6"
-  set $ws7 "7"
-  set $ws8 "8"
-  set $ws9 "9"
-  set $ws10 "10"
+  set $ws1 " 1 "
+  set $ws2 " 2 "
+  set $ws3 " 3 "
+  set $ws4 " 4 "
+  set $ws5 " 5 "
+  set $ws6 " 6 "
+  set $ws7 " 7 "
+  set $ws8 " 8 "
+  set $ws9 " 9 "
+  set $ws10 " 10 "
 
 ### RESIZE
   mode "resize" {
@@ -79,9 +79,9 @@
 ### HOTKEYS
   ### APPSTARTER
     ### DESKTOP
-      #bindsym $mod+a exec --no-startup-id "xfce4-popup-whiskermenu"
+      bindsym $mod+a exec --no-startup-id "xfce4-popup-whiskermenu"
       #bindsym $mod+a exec --no-startup-id "xfce4-appfinder"
-      bindsym $mod+a exec --no-startup-id "rofi -show drun -theme sidebar"
+      #bindsym $mod+a exec --no-startup-id "rofi -show drun -theme sidebar"
     ### DMENU LIKE
       bindsym $mod+d exec dmenu_run
       #bindsym $mod+d exec "rofi -theme dmenu -show run"
@@ -90,10 +90,10 @@
     #bindsym $mod+Return exec x-terminal-emulator
     #bindsym $mod+Return exec xfce4-terminal
   ### BACKLIGHT
-    #bindsym XF86MonBrightnessUp exec "lux -a 1%"
-    #bindsym XF86MonBrightnessDown exec "lux -s 1%"
-    bindsym XF86MonBrightnessUp   exec "xbacklight +1"
-    bindsym XF86MonBrightnessDown exec "xbacklight -1"
+    bindsym XF86MonBrightnessUp exec "lux -a 1%"
+    bindsym XF86MonBrightnessDown exec "lux -s 1%"
+    #bindsym XF86MonBrightnessUp   exec "xbacklight +1"
+    #bindsym XF86MonBrightnessDown exec "xbacklight -1"
   ### KILL FOCUSED WINDOW
     bindsym $mod+Shift+q kill
   ### CHANGE FOCUSE WINDOW
@@ -161,15 +161,15 @@
 
 ### I3BAR
      bar {
-        font pango:Open Sans 16
+        font pango:Source Code Pro 20
         status_command i3status
      	colors {
-     		#background #000000
-            background #172220
+     		background #343434
+            #background #172220
             #mode               border  bg      text
-     	   #inactive_workspace  #eb2f06 #eb2f06 #ffffff
-            inactive_workspace  #a0a0a0 #a0a0a0 #e5e5e5
-     	   #focused_workspace   #fa983a #fa983a #ffffff
-            focused_workspace   #e5e5e5 #e5e5e5 #172220
+     	    inactive_workspace  #3db39d #3db39d #ffffff
+            #inactive_workspace  #a0a0a0 #a0a0a0 #e5e5e5
+     	    focused_workspace   #f0c75e #f0c75e #ffffff
+            #focused_workspace   #e5e5e5 #e5e5e5 #172220
      	}
      }
