@@ -42,6 +42,12 @@
                 ["ln", "wallpapers/lake1.jpg", "{{.HOME}}/Bilder/wallpapers/lake1.jpg"]
                 ["ln", "wallpapers/six.png", "{{.HOME}}/Bilder/wallpapers/six.png"]
             ]
+        },
+        "alacritty": {
+            "desc": "alacritty config file",
+            "primitives": [
+                ["ln", "alacritty/alacritty.yml", "{{.HOME}}/.config/alacritty/alacritty.yml"]
+            ]
         }
     }
 }

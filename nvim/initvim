@@ -1,6 +1,7 @@
 set runtimepath^=~/.config/nvim
 let &packpath = &runtimepath
 set number
+set relativenumber
 set cursorline
 syntax enable
 set tabstop=4
@@ -29,6 +30,7 @@ call plug#begin()
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'zah/nim.vim'
     Plug 'https://github.com/tpope/vim-fugitive'
+    Plug 'sebdah/vim-delve'
 call plug#end()
 
 " ultisnips

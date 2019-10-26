@@ -7,7 +7,7 @@
   ### COMPOSITOR
     #exec --no-startup-id "compton -b"
   ### WALLPAPER
-    exec --no-startup-id "feh --bg-scale ~/Bilder/wallpapers/lake1.jpg"
+    exec --no-startup-id "feh --bg-scale ~/Bilder/wallpapers/six.png"
   ### POLKIT
     exec --no-startup-id "/usr/lib/polkit-gnome-authentication-agent-1"
     exec --no-startup-id "/usr/bin/lxpolkit"
@@ -79,9 +79,9 @@
 ### HOTKEYS
   ### APPSTARTER
     ### DESKTOP
-      bindsym $mod+a exec --no-startup-id "xfce4-popup-whiskermenu"
+      #bindsym $mod+a exec --no-startup-id "xfce4-popup-whiskermenu"
       #bindsym $mod+a exec --no-startup-id "xfce4-appfinder"
-      #bindsym $mod+a exec --no-startup-id "rofi -show drun -theme sidebar"
+      bindsym $mod+a exec --no-startup-id "rofi -show drun -theme sidebar"
     ### DMENU LIKE
       bindsym $mod+d exec dmenu_run
       #bindsym $mod+d exec "rofi -theme dmenu -show run"
