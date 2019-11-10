@@ -90,10 +90,10 @@
     #bindsym $mod+Return exec x-terminal-emulator
     #bindsym $mod+Return exec xfce4-terminal
   ### BACKLIGHT
-    bindsym XF86MonBrightnessUp exec "lux -a 1%"
-    bindsym XF86MonBrightnessDown exec "lux -s 1%"
-    #bindsym XF86MonBrightnessUp   exec "xbacklight +1"
-    #bindsym XF86MonBrightnessDown exec "xbacklight -1"
+    #bindsym XF86MonBrightnessUp exec "lux -a 1%"
+    #bindsym XF86MonBrightnessDown exec "lux -s 1%"
+    bindsym XF86MonBrightnessUp   exec "xbacklight +1"
+    bindsym XF86MonBrightnessDown exec "xbacklight -1"
   ### KILL FOCUSED WINDOW
     bindsym $mod+Shift+q kill
   ### CHANGE FOCUSE WINDOW
