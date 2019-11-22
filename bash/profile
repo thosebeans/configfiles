@@ -26,16 +26,16 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-additionalPaths="$HOME/BIN /usr/local/go/bin $HOME/.yarn/bin"
+additionalPaths="$HOME/bin /usr/local/go/bin $HOME/.yarn/bin"
 for i in $additionalPaths; do
     if [ "${PATH}" != *$i* ]; then
         PATH="$i:$PATH"
     fi
 done
 
-rm -rf "${HOME}/TMP" || printf "%s" ""
+rm -rf "${HOME}/tmp" || printf "%s" ""
 tmpDirPath="/tmp/$(date +%Y%m%d%m%H%M%S)"
 mkdir -p "${tmpDirPath}"
-ln -srf "${tmpDirPath}" "${HOME}/TMP"
+ln -srf "${tmpDirPath}" "${HOME}/tmp"
 
 eval "ssh-agent" &>/dev/null || printf "%s" ""
