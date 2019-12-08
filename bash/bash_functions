@@ -1,13 +1,5 @@
 #!/bin/bash
 
-vim() {
-    if which nvim &>/dev/null ; then
-        env nvim $*
-    else
-        env vim $*
-    fi
-}
-
 hgg() {
     hg log --graph --template "{label('custom.rev',rev)}:{label('custom.node',node|short)}:{label('custom.branch',branch)}:{label('custom.author',author)}\n\'{label('custom.desc',desc)}\'\n"
 }
