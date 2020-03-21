@@ -1,0 +1,13 @@
+snippet include_system "include <...>"
+#include <${0:header}.h>
+endsnippet
+
+snippet include_local "include ''...''"
+#include "${0:header}.h"
+endsnippet
+
+snippet function "type name() {..."
+${1:type} ${2:name}(${3:args}) {
+	${0:body}
+};
+endsnippet
