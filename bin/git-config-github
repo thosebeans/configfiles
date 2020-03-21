@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+git config user.name thosebeans
+git config user.email kaempfechristian@protonmail.com

@@ -48,6 +48,13 @@
             "primitives": [
                 ["ln", "alacritty/alacritty.yml", "{{.HOME}}/.config/alacritty/alacritty.yml"]
             ]
+        },
+        "bin": {
+            "desc": "additional executables",
+            "primitives": [
+                ["ln", "bin/git-config-github", "{{.HOME}}/bin/git-config-github"],
+                ["ln", "bin/passmenu", "{{.HOME}}/bin/passmenu"]
+            ]
         }
     }
 }
