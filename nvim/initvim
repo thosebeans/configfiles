@@ -1,3 +1,4 @@
+filetype plugin on
 set runtimepath^=~/.config/nvim
 let &packpath = &runtimepath
 set number
