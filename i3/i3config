@@ -90,6 +90,8 @@
     bindsym $mod+Return exec i3-sensible-terminal
     #bindsym $mod+Return exec x-terminal-emulator
     #bindsym $mod+Return exec xfce4-terminal
+  ### SCREENLOCK
+    bindsym XF86Sleep exec 'i3lock -n -c 57f9d6'
   ### BACKLIGHT
     #bindsym XF86MonBrightnessUp exec "lux -a 1%"
     #bindsym XF86MonBrightnessDown exec "lux -s 1%"
