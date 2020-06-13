@@ -9,5 +9,37 @@ endsnippet
 snippet function "type name() {..."
 ${1:type} ${2:name}(${3:args}) {
 	${0:body}
-};
+}
+endsnippet
+
+snippet struct "struct {...}"
+struct ${1:name}{
+	${0:body}
+}${2:;}
+endsnippet
+
+snippet enum "enum {...}"
+enum ${1:name}{
+	${0:body}
+}${2:;}
+endsnippet
+
+snippet typedef "typedef ..."
+typedef ${0:def} ${1:alias};
+endsnippet
+
+snippet if "if (...) ..."
+if (${1:cond}) ${0:stmt}
+endsnippet
+
+snippet ternary "... ? ... : ...."
+${1:cond} ? ${2:true} : ${3:false}
+endsnippet
+
+snippet block "{...}"
+{${0:body}}
+endsnippet
+
+snippet return "return ..."
+return ${0:expr};
 endsnippet
