@@ -9,7 +9,7 @@ order += "tztime berlin"
 battery 0 {
     last_full_capacity = true
     format = "%status %percentage"
-    path = "/sys/class/power_supply/BAT1/uevent"
+    path = "/sys/class/power_supply/BAT0/uevent"
 }
 
 tztime berlin {

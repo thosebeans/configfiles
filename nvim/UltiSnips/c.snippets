@@ -43,3 +43,28 @@ endsnippet
 snippet return "return ..."
 return ${0:expr};
 endsnippet
+
+snippet define "#define ..."
+#define ${1:name} ${0:expr}
+endsnippet
+
+snippet guard "#ifndef ... #define ... #endif"
+#ifndef ${1:name}
+#define $1
+
+${0}
+
+#endif
+endsnippet
+
+snippet ifdef "#ifdef ..."
+#ifdef ${1:symbol}
+${0}
+#endif
+endsnippet
+
+snippet ifndef "#ifndef ..."
+#ifndef ${1:symbol}
+${0}
+#endif
+endsnippet
